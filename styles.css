@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* utility classes--- */
+
+
+
+#navbar::before {
+    content: "";
+    background-color: purple;
+    position: absolute;
+
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+
+
+}
+
+#navbar {
+    position: relative;
+}
+#navbar{
+    background-color: rgb(144, 30, 175);
+    font-family: 'Yeon Sung' ;
+    padding: 13px, 14px;
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+     justify-content: center;
+    align-items: center;
+}
+#navbar li{
+    list-style: none;
+    padding-top: 10px;
+}
+#navbar li a{ 
+   text-decoration: none;
+    padding: 13px 20px;
+    color: white;
+    
+}
+
+
+
+
+
+
+
+
+ #navbar li a:hover{
+        color: white; 
+        font-weight: bolder; 
+}
+a:active {
+    background-color: rgb(232, 55, 206)
+}
+
+
+
+
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 378px;
+    font-size: 41px;
+    font-weight: bold;
+
+    color: #0c0b0b;
+    position: relative;
+}
+
+#welcome::before {
+    content: "";
+    background: url('https://images.squarespace-cdn.com/content/v1/5b283cebe74940e8b5690e47/1629143837326-HK9OF3YI1ER0LN758D61/Cont3+Landscape+11x14.jpg') no-repeat center center/auto;
+    position: absolute;
+    height: 130%;
+    width: 100%;
+
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#welcome #banner {
+    font-size: 61px;
+    margin-top:70px;
+
+
+
+}
+
+#welcome img {
+    transform: rotate(360deg);
+    height: 100px;
+    height: 192px;
+    margin-top: 44px;
+    position:relative;
+    animation-name:dancing;
+    animation-duration:4s;
+    animation-iteration-count:2;
+    animation-timing-function:ease-in-out;
+
+}
+
+@keyframes dancing{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+
+#mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 27px;
+    margin-top: 57px
+}
+
+/* #mission>h1 {
+    transition-property:font-size;
+    transition-duration:1s;
+
+}
+#mission>h1:hover{
+     font-size:35px;
+
+} */
+
+
+#mission #layout {
+
+
+
+    display: flex;
+
+}
+
+.card {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 419px;
+    height: 298px;
+    font-size: 10px;
+    margin: 18px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(247, 238, 247);
+    transition-property:transform;
+    transition-duration:1s;
+}
+
+.card:hover{transform:scale(1.2); }
+
+.card h1 {
+    font-size: 23px;
+    
+}
+
+ /* .card h1:hover{
+     font-size:30px;      */
+
+
+
+/* } */
+
+.card div.container {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 29px;
+}
+
+.container img {
+    height: 131px;
+    width: 155px;
+}
+
+.container div.para {
+    width: 191px;
+    padding: 4px;
+    font-size: 18px;
+    margin-left: 19px;
+    height: 185px;
+    padding-top: 60px;
+}
+
+#sponsor{display:flex;
+         flex-direction:column;
+         justify-content:center;
+         align-items:center;
+         background-color: #b6a2ca;
+             }
+#sponsor h1{ font-size:38px;
+              margin:10px; 
+              transition-property:font-size;
+              transition-duration:1s;
+          }
+          
+           #sponsor h1:hover{
+               font-size:30px;    }
+
+#logoimages{
+    display:flex;
+    justify-content:center;
+         align-items:center;
+    
+}
+
+#hp{width: 190px;
+    
+    margin: 13px;}
+#dell{width:189px;
+    margin: 36px;}
+#microsoft{width:329px;
+    margin: -26px;}
+#apple{width:216px;
+    margin: 24px;}
+
+
+    footer{
+        background-color:black;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        height:45px;
+    }
