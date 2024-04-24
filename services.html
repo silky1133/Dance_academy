@@ -1,13 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Class Info - Silky Dance Academy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Silky Dance Academy</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        /* Common Styles */
         * {
             margin: 0;
             box-sizing: border-box;
             padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        /* Page Specific Styles */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(144, 30, 175);
+            font-family: 'Yeon Sung';
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Hover effect */
+        .container:hover {
+            transform: scale(1.01);
+        }
+
+        h1:hover {
+            color: #f8b400;
+        }
+
+        /* Card styling */
+        .card {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            text-align: center;
+            padding-top: 80px; /* Adjust to center text */
         }
 
         /* Navbar Styles */
@@ -53,49 +117,33 @@
             font-weight: bold;
         }
 
-        /* Common Styles */
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
+        /* Media query for smartphones */
+        @media screen and (max-width: 480px) {
+            #navbar {
+                padding: 8px 10px;
+            }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-        }
+            #navbar li {
+                padding-top: 5px;
+            }
 
-        h2 {
-            margin-bottom: 10px;
-            color: rgb(144, 30, 175);
-        }
+            #logo {
+                margin-right: 70px;
+            }
 
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-            color: #555;
-        }
+            .container {
+                width: 90%;
+            }
 
-        .class-info {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 20px;
-            transition: transform 0.3s ease-in-out;
-        }
+            .card {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 10px;
+            }
 
-        .class-info:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .class-info h3 {
-            margin-bottom: 10px;
-        }
-
-        .class-info p:last-child {
-            margin-bottom: 0;
+            h1 {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
@@ -113,36 +161,30 @@
 
     <!-- Content Section -->
     <div class="container">
-        <h1>Class Information</h1>
-        
-        <div class="class-info">
-            <h2>Ballet</h2>
-            <p>Our ballet classes are designed for dancers of all ages and levels. Whether you're a beginner or an experienced ballerina, our expert instructors will guide you through classical ballet techniques, focusing on posture, strength, flexibility, and grace.</p>
-            <p><strong>Class Schedule:</strong> Mondays & Wednesdays, 5:00 PM - 6:00 PM</p>
+        <h1>Our Services</h1>
+        <div class="card">
+            <div class="card-content">
+                <h2>Service 1</h2>
+                <p>Description of service 1</p>
+            </div>
         </div>
-
-        <div class="class-info">
-            <h2>Jazz</h2>
-            <p>Join our jazz classes to explore the vibrant and energetic world of jazz dance. Learn a variety of jazz styles, including Broadway, lyrical, and contemporary jazz, while improving your technique, musicality, and performance skills.</p>
-            <p><strong>Class Schedule:</strong> Tuesdays & Thursdays, 6:30 PM - 7:30 PM</p>
+        <div class="card">
+            <div class="card-content">
+                <h2>Service 2</h2>
+                <p>Description of service 2</p>
+            </div>
         </div>
-
-        <div class="class-info">
-            <h2>Tap</h2>
-            <p>Tap into the rhythm and excitement of tap dance! Our tap classes focus on developing intricate footwork, rhythm, and musicality, while exploring a range of tap styles from classic to modern. No experience necessary!</p>
-            <p><strong>Class Schedule:</strong> Fridays, 4:00 PM - 5:00 PM</p>
+        <div class="card">
+            <div class="card-content">
+                <h2>Service 3</h2>
+                <p>Description of service 3</p>
+            </div>
         </div>
-
-        <div class="class-info">
-            <h2>Hip-hop</h2>
-            <p>Get ready to groove and move in our hip-hop classes! Learn the latest hip-hop moves and choreography while building strength, coordination, and confidence. Our dynamic instructors will keep you energized and inspired!</p>
-            <p><strong>Class Schedule:</strong> Saturdays, 10:00 AM - 11:00 AM</p>
-        </div>
-
-        <div class="class-info">
-            <h2>Contemporary</h2>
-            <p>Experience the freedom and expression of contemporary dance! Our contemporary classes blend elements of ballet, jazz, and modern dance, allowing dancers to explore their emotions and creativity through movement.</p>
-            <p><strong>Class Schedule:</strong> Sundays, 3:00 PM - 4:00 PM</p>
+        <div class="card">
+            <div class="card-content">
+                <h2>Service 4</h2>
+                <p>Description of service 4</p>
+            </div>
         </div>
     </div>
 </body>
