@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Silky Dance Academy</title>
+    
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        #navbar {
+            background-color: rgb(144, 30, 175);
+            font-family: 'Yeon Sung';
+            padding: 13px 14px;
+            height: 50px;
+        }
+
+        #navbar ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding-top: 10px;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            padding: 5px 20px;
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #navbar li a:hover {
+            color: #f8b400;
+            font-weight: bold;
+        }
+
+        #logo {
+            display: flex;
+            color: white;
+            align-items: center;
+            margin: 5px 2px;
+            font-size: 10px;
+            margin-right: 140px;
+        }
+
+        #logo img {
+            height: 35px;
+            filter: invert(1);
+            margin-right: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(144, 30, 175);
+            font-family: 'Yeon Sung';
+            text-transform: uppercase;
+            transition: color 0.3s ease-in-out;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Hover effect */
+        .container:hover {
+            transform: scale(1.01);
+        }
+
+        h1:hover {
+            color: #f8b400;
+        }
+
+        /* Card styling */
+        .card {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Media query for smartphones */
+        @media screen and (max-width: 480px) {
+            #navbar {
+                padding: 8px 10px;
+            }
+
+            #navbar li {
+                padding-top: 5px;
+            }
+
+            #logo {
+                margin-right: 70px;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .card {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="classes.html">Class Info</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About Silky's Dance Academy</h1>
+        <p>Silky's Dance Academy is dedicated to providing high-quality dance education for all ages and skill levels. Located in the heart of the city, our academy offers a wide range of dance styles including ballet, jazz, tap, hip-hop, and contemporary.</p>
+        <p>Our experienced instructors are passionate about sharing their love for dance and helping students reach their full potential. Whether you're a beginner or an experienced dancer, we have classes tailored to suit your needs.</p>
+        <p>At Silky's Dance Academy, we believe in fostering creativity, building confidence, and nurturing a supportive community where every dancer can thrive. Join us and embark on a journey of self-expression, artistry, and growth!</p>
+
+        <!-- Circular cards -->
+        <div class="card">
+            <img src="https://w0.peakpx.com/wallpaper/486/902/HD-wallpaper-%EF%B8%8F-woman-dancer-dance-ballerina.jpg" alt="Dance Class">
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1527186504227-0a47da29a0d0?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8amF6eiUyMGRhbmNlfGVufDB8fDB8fHww" alt="Dance Class">
+        </div>
+        <div class="card">
+            <img src="https://e0.pxfuel.com/wallpapers/368/96/desktop-wallpaper-fred-astaire-fred-astaire-dancing-fred-astaire-tap-dance-black-dancer.jpg" alt="Dance Class">
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/0a/24/2a/0a242a608901093df29b91fe732798bd.jpg" alt="Dance Class">
+        </div>
+    </div>
+</body>
+</html>
