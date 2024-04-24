@@ -16,29 +16,41 @@
             font-family: 'Yeon Sung';
             padding: 13px 14px;
             height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #navbar .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        #navbar .logo img {
+            height: 35px;
+            filter: invert(1);
+            margin-right: 10px;
         }
 
         #navbar ul {
             display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #navbar li {
             list-style: none;
-            padding-top: 10px;
         }
 
-        #navbar li a {
+        #navbar ul li {
+            padding: 0 15px;
+        }
+
+        #navbar ul li a {
             text-decoration: none;
-            padding: 5px 20px;
             color: white;
+            transition: color 0.3s ease-in-out;
         }
 
-        #navbar li a:hover {
-            color: white;
-            font-weight: bolder;
+        #navbar ul li a:hover {
+            color: #f8b400;
+            font-weight: bold;
         }
 
         /* Common Styles */
@@ -51,15 +63,18 @@
         h1 {
             text-align: center;
             margin-bottom: 20px;
+            color: #333;
         }
 
         h2 {
             margin-bottom: 10px;
+            color: rgb(144, 30, 175);
         }
 
         p {
             line-height: 1.6;
             margin-bottom: 15px;
+            color: #555;
         }
 
         .class-info {
@@ -67,6 +82,12 @@
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .class-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .class-info h3 {
@@ -82,7 +103,6 @@
     <!-- Navbar -->
     <nav id="navbar">
         <ul>
-            
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
@@ -91,6 +111,7 @@
         </ul>
     </nav>
 
+    <!-- Content Section -->
     <div class="container">
         <h1>Class Information</h1>
         
