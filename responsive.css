@@ -1,0 +1,30 @@
+@media (max-width:1332px){
+    #mission div#layout {
+        display: flex;
+        flex-direction: column;}
+        #dell {
+            width: 91px;
+            margin: 1px;
+        }
+
+        #hp {
+            width: 102px;
+            margin: 28px;
+        }
+
+        #apple {
+            width: 116px;
+            margin: 1px;
+        }
+        #microsoft {
+            width: 189px;
+            margin: 10px;
+        }
+
+        #welcome #banner {
+            font-size: 40px;
+            margin-top: 70px;
+        }
+       #welcome{
+        font-size: 35px;}
+    }
