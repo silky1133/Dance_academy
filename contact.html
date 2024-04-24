@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        /* Common Styles */
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 30px;
+        }
+
+        .myForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .myInput {
+            width: 100%;
+            max-width: 300px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            max-width: 200px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        #footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+        @media screen and (max-width: 768px) {
+            .myInput, .btn {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="/Contact" method="post" class="myForm">
+            <input type="text" class="myInput" name="name" placeholder="Enter your name">
+            <input type="phone" class="myInput" name="phone" placeholder="Enter your phone number">
+            <input type="email" class="myInput" name="email" placeholder="Enter your email id">
+            <input type="text" class="myInput" name="address" placeholder="Enter your address">
+            <input type="text" class="myInput" name="desc" placeholder="Enter your concern">
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <footer id="footer">
+        Copyright © 2024 SilkyDanceAcademy.com  All rights reserved
+    </footer>
+</body>
+</html>
