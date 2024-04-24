@@ -18,52 +18,6 @@
             background-color: #f7f7f7;
         }
 
-        #navbar {
-            background-color: rgb(144, 30, 175);
-            font-family: 'Yeon Sung';
-            padding: 13px 14px;
-            height: 50px;
-        }
-
-        #navbar ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #navbar li {
-            list-style: none;
-            padding-top: 10px;
-        }
-
-        #navbar li a {
-            text-decoration: none;
-            padding: 5px 20px;
-            color: white;
-            transition: color 0.3s ease-in-out;
-        }
-
-        #navbar li a:hover {
-            color: #f8b400;
-            font-weight: bold;
-        }
-
-        #logo {
-            display: flex;
-            color: white;
-            align-items: center;
-            margin: 5px 2px;
-            font-size: 10px;
-            margin-right: 140px;
-        }
-
-        #logo img {
-            height: 35px;
-            filter: invert(1);
-            margin-right: 10px;
-        }
-
         /* Page Specific Styles */
         .container {
             width: 80%;
@@ -127,6 +81,49 @@
             font-size: 18px;
         }
 
+        /* Navbar Styles */
+        #navbar {
+            background-color: rgb(144, 30, 175);
+            font-family: 'Yeon Sung';
+            padding: 13px 14px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #navbar .logo {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        #navbar .logo img {
+            height: 35px;
+            filter: invert(1);
+            margin-right: 10px;
+        }
+
+        #navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        #navbar ul li {
+            padding: 0 15px;
+        }
+
+        #navbar ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease-in-out;
+        }
+
+        #navbar ul li a:hover {
+            color: #f8b400;
+            font-weight: bold;
+        }
+
         /* Media query for smartphones */
         @media screen and (max-width: 480px) {
             #navbar {
@@ -175,4 +172,4 @@
 
         <div class="service-card">
             <div class="service-title">Private Lessons</div>
-            <p class="service-description">Get personalized attention with our private dance lessons tailored to your specific needs and skill level.</p
+            <p class="service-description">Get personalized attention with our private dance lessons tailored to your specific needs and skill level.</p>
